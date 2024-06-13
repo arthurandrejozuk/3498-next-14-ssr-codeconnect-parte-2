@@ -1,0 +1,17 @@
+.container__error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.titulo{
+    color: #81FE88;
+}
+.info{
+    color: #BCBCBC;
+    font-size: 20px;
+}
+.volta{
+    margin-top: 16px;
+    color: #81FE88;
+}
