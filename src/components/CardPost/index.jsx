@@ -2,8 +2,7 @@ import Image from "next/image";
 import { Avatar } from "../Avatar";
 import styles from "./cardpost.module.css";
 import Link from "next/link";
-import { IconButton } from "../IconButton";
-import { ThumbsUp } from "../ThumbsUp";
+import { ThumbsUpButton } from "./ThumbsUpButton";
 import { incrementThumbsUp } from "@/actions";
 
 export const CardPost = ({ post, highlight }) => {
@@ -29,9 +28,7 @@ export const CardPost = ({ post, highlight }) => {
       <footer className={styles.footer}>
         <div>
           <form action={submitThumbsUp}>
-            <IconButton>
-              <ThumbsUp />
-            </IconButton>
+            <ThumbsUpButton/>
           </form>
           <p>
             {post.likes}
